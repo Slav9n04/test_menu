@@ -1,5 +1,8 @@
 <h3>Запуск команды консольной</h3>
-<code>$ php console/run2.php -path="categories.json"</code>
+<code>php console/run2.php -path="categories.json"</code>
+<p>Чтобы удалить все записи перед импортом</p>
+<code>php console/run2.php -fileName="categories.json" -beforeDeleteAll=true
+</code>
 
 
 <h3>Тестовое задание</h3>
