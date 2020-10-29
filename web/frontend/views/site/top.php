@@ -9,5 +9,5 @@ use common\helpers\MenuRenderHelper;
 $this->title = 'Тестовое задание';
 ?>
 <div class="site-index">
-	<?php MenuRenderHelper::render($items, 0) ?>
+	<?php MenuRenderHelper::render($items, 0, 1) ?>
 </div>

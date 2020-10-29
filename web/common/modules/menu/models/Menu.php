@@ -6,7 +6,6 @@ namespace common\modules\menu\models;
 
 use yii\db\ActiveRecord;
 use yii\validators\NumberValidator;
-use yii\validators\RequiredValidator;
 use yii\validators\StringValidator;
 use yii\validators\UniqueValidator;
 
@@ -39,7 +38,6 @@ class Menu extends ActiveRecord {
 	 */
 	public function rules() {
 		return [
-			[[self::ATTR_ID],                       RequiredValidator::class],
 			[[self::ATTR_ID, self::ATTR_PARENT_ID], NumberValidator::class],
 			[[self::ATTR_NAME, self::ATTR_ALIAS],   StringValidator::class, 'max' => 255],
 			[[self::ATTR_ID],                       UniqueValidator::class],
